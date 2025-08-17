@@ -63,10 +63,10 @@
 
         ARROW {
             bindings = <
-&kp F1   &kp F2   &kp F3            &kp F4               &kp F5                      &kp K_APPLICATION  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &none
-&kp F6   &kp F7   &kp F8            &kp F9               &kp F10  &kp N1  &none      &kp HOME           &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
-&kp F11  &kp F12  &kp LS(CAPSLOCK)  &kp LG(PRINTSCREEN)  &none    &none   &none      &none              &none        &mkp MB1  &mkp MB2       &kp DELETE
-&none    &none    &none             &none                &none    &none   &kp ENTER  &kp BACKSPACE                                            &kp RIGHT_WIN
+&kp F1   &kp F2   &kp F3            &kp F4               &kp F5                      &kp K_APPLICATION  &kp PAGE_UP       &kp UP    &kp PAGE_DOWN  &none
+&kp F6   &kp F7   &kp F8            &kp F9               &kp F10  &kp N1  &none      &kp HOME           &kp LEFT          &kp DOWN  &kp RIGHT      &kp END
+&kp F11  &kp F12  &kp LS(CAPSLOCK)  &kp LG(PRINTSCREEN)  &none    &none   &none      &none              &kp LS(CAPSLOCK)  &mkp MB1  &mkp MB2       &kp DELETE
+&none    &none    &none             &none                &none    &none   &kp ENTER  &kp BACKSPACE                                                 &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -76,7 +76,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET      &kp AMPERSAND  &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &none            &none        &none     &none       &none        &to 0  &none      &none          &none          &kp DOUBLE_QUOTES  &kp APOSTROPHE        &kp SEMICOLON
-&none            &none        &none     &none       &none        &none  &none      &kp TILDE      &none          &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp BACKSLASH
+&none            &none        &none     &none       &none        &none  &none      &kp TILDE      &kp PIPE       &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp BACKSLASH
 &none            &none        &none     &none       &none        &none  &kp ENTER  &kp BACKSPACE                                                          &none
             >;
 
