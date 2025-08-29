@@ -53,7 +53,7 @@
         default_layer {
             bindings = <
 &kp Q        &kp W           &kp E        &kp R             &kp T                                                    &kp Y            &kp U              &kp I        &kp O            &kp P
-&kp A        &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &mt LEFT_WIN G  &to 2             &none                  &kp H            &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
+&kp A        &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &mt LEFT_WIN G  &to 1             &none                  &kp H            &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp MINUS
 &kp Z        &kp X           &kp C        &kp V             &kp B           &kp LS(CAPSLOCK)  &none                  &kp N            &kp M              &kp COMMA    &kp PERIOD       &kp SLASH
 &lt 5 SPACE  &none           &none        &lt 3 ESCAPE      &lt 1 TAB       &mt LCTRL SPACE   &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE                                                   &kp LEFT_WIN
             >;
@@ -63,10 +63,10 @@
 
         ARROW {
             bindings = <
-&kp F1   &kp F2   &kp F3            &kp F4               &kp F5                      &kp K_APPLICATION  &kp PAGE_UP       &kp UP    &kp PAGE_DOWN  &none
-&kp F6   &kp F7   &kp F8            &kp F9               &kp F10  &kp N1  &none      &kp HOME           &kp LEFT          &kp DOWN  &kp RIGHT      &kp END
-&kp F11  &kp F12  &kp LS(CAPSLOCK)  &kp LG(PRINTSCREEN)  &none    &none   &none      &none              &kp LS(CAPSLOCK)  &mkp MB1  &mkp MB2       &kp DELETE
-&none    &none    &none             &none                &none    &none   &kp ENTER  &kp BACKSPACE                                                 &kp RIGHT_WIN
+&kp F1   &kp F2   &kp F3            &kp F4               &kp F5                     &kp K_APPLICATION  &kp PAGE_UP       &kp UP    &kp PAGE_DOWN  &none
+&kp F6   &kp F7   &kp F8            &kp F9               &kp F10  &to 0  &none      &kp HOME           &kp LEFT          &kp DOWN  &kp RIGHT      &kp END
+&kp F11  &kp F12  &kp LS(CAPSLOCK)  &kp LG(PRINTSCREEN)  &none    &none  &none      &none              &kp LS(CAPSLOCK)  &mkp MB1  &mkp MB2       &kp DELETE
+&none    &none    &none             &none                &none    &none  &kp ENTER  &kp BACKSPACE                                                 &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -75,7 +75,7 @@
         FUNCTION {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET      &kp AMPERSAND  &kp ASTRK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&none            &none        &none     &none       &none        &to 0  &none      &none          &none          &kp DOUBLE_QUOTES  &kp APOSTROPHE        &kp SEMICOLON
+&none            &none        &none     &none       &none        &none  &none      &none          &none          &kp DOUBLE_QUOTES  &kp APOSTROPHE        &kp SEMICOLON
 &none            &none        &none     &none       &none        &none  &none      &kp TILDE      &kp PIPE       &kp LEFT_BRACKET   &kp RIGHT_BRACKET     &kp BACKSLASH
 &none            &none        &none     &none       &none        &none  &kp ENTER  &kp BACKSPACE                                                          &none
             >;
@@ -125,6 +125,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
         };
     };
 };
