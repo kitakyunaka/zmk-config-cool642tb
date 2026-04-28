@@ -58,18 +58,18 @@
 &lt 5 SPACE  &none           &kp A        &lt 3 ESCAPE      &lt 1 TAB       &mt LCTRL SPACE   &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE                                                   &kp LEFT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         ARROW {
             bindings = <
-&kp F1   &kp F2   &kp F3            &kp F4               &kp F5                     &kp K_APPLICATION  &kp PAGE_UP       &kp UP    &kp PAGE_DOWN  &none
-&kp F6   &kp F7   &kp F8            &kp F9               &kp F10  &to 0  &none      &kp HOME           &kp LEFT          &kp DOWN  &kp RIGHT      &kp END
-&kp F11  &kp F12  &kp LS(CAPSLOCK)  &kp LG(PRINTSCREEN)  &none    &none  &none      &none              &kp LS(CAPSLOCK)  &mkp MB1  &mkp MB2       &kp DELETE
-&none    &none    &none             &none                &none    &none  &kp ENTER  &kp BACKSPACE                                                 &kp RIGHT_WIN
+&kp F1   &kp F2   &kp F3  &kp F4          &kp F5                     &kp K_APPLICATION  &kp PAGE_UP     &kp UP    &kp PAGE_DOWN  &none
+&kp F6   &kp F7   &kp F8  &kp F9          &kp F10  &to 0  &none      &kp HOME           &kp LEFT        &kp DOWN  &kp RIGHT      &kp END
+&kp F11  &kp F12  &trans  &kp LS(LC(N4))  &none    &none  &none      &kp LANGUAGE_2     &kp LANGUAGE_1  &mkp MB1  &mkp MB2       &kp DELETE
+&none    &none    &none   &none           &none    &none  &kp ENTER  &kp BACKSPACE                                               &kp RIGHT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
@@ -91,7 +91,7 @@
 &none         &none         &none         &none         &none   &none  &kp ENTER  &kp BACKSPACE                                            &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         MOUSE {
@@ -102,7 +102,7 @@
 &none  &none           &none        &lt 3 ESCAPE      &lt 1 TAB       &mt LCTRL SPACE   &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE                                    &kp LEFT_WIN
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         BLUETOOTH {
